@@ -1,0 +1,7 @@
+/graphql/node_modules/
+/app/vendor
+.idea
+conf/crontabs/
+conf/php/
+/frontend/.idea/
+variables.env

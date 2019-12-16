@@ -1,0 +1,20 @@
+{
+  "name": "evenito-tech-task",
+  "authors": [
+    {
+      "name": "Yanko Ivanov",
+      "email": "y.ivanov@codecoda.com"
+    }
+  ],
+  "require": {
+    "robmorgan/phinx": "*",
+    "phalcon/dd": "*",
+    "phalcon/incubator": "^3.4",
+    "firebase/php-jwt": "*",
+    "aws/aws-sdk-php": "^3.112",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phalcon/ide-stubs": "^3.4"
+  }
+}
