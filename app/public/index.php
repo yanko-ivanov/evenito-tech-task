@@ -45,9 +45,10 @@ $app->get(
         /**
          * No possibility for an sql injection because of the type of check.
          */
-        $direction = $app->request->getQuery('direction', 'string') == 'asc' ? 'ASC' : 'DESC';
+        $direction = $app->request->getQuery('sort', 'string') == 'asc' ? 'ASC' : 'DESC';
 
         $sql = "SELECT * FROM video ORDER BY name $direction";
+
         $result = $app['db']->query($sql);
 
         $result->setFetchMode(Phalcon\Db::FETCH_OBJ);
