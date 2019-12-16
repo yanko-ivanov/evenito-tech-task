@@ -13,8 +13,6 @@ services:
       - mysql:/var/lib/mysql
     env_file:
       - variables.env
-    networks:
-      - private
 
   phpmyadmin:
     restart: always
@@ -33,6 +31,8 @@ services:
     image: nginx:latest
     depends_on:
       - app
+    expose:
+      - 80
     ports:
       - 80:80
       - 443:443
